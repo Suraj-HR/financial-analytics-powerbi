@@ -101,9 +101,17 @@ The final output is a 3-page interactive dashboard designed for business-level d
 ## Files Included
 
 * financial_analytics_dashboard.pbix → Power BI dashboard file
-* page1_financial_overview.png → Financial Overview
-* page2_product_analysis.png → Product Analysis
-* page3_regional_analysis.png → Regional Analysis
+
+## Dashboard Preview
+
+### Financial Overview
+![Financial Overview](page1_financial_overview.png)
+
+### Product Performance Analysis
+![Product Analysis](page2_product_analysis.png)
+
+### Regional Analysis
+![Regional Analysis](page3_regional_analysis.png)
 
 ---
 
