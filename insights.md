@@ -1,26 +1,26 @@
 # Finance Performance Dashboard — Insights Summary
 
-This document captures the business insights generated so far from the Finance Performance Dashboard project. It is written in a simple, interview-ready style.
+
 
 ## 1) Data cleaning insight
 
 The dataset contained inconsistent date formats, so the date column was standardized into a proper `DATE` field before analysis. This made time-based reporting reliable and prevented errors in monthly calculations.
 
-Interview line:
+
 > I standardized mixed date formats into one proper date column and validated the conversion before moving to analysis.
 
 ## 2) Total revenue insight
 
 The total revenue from delivered orders is approximately 18.65 million. This represents actual completed business, because cancelled and incomplete transactions were excluded from the calculation.
 
-Interview line:
+
 > I filtered only delivered orders so the revenue reflected completed transactions, not inflated totals from cancelled or unfulfilled orders.
 
 ## 3) Monthly revenue trend insight
 
 Monthly revenue peaked in April 2022 and then declined in May and June. This suggests that the business had a strong month in April, but the performance was not sustained in the following months.
 
-Interview line:
+
 > Revenue peaked in April and then declined, which suggests a short-term spike that was not sustained in the next months.
 
 Possible business interpretation:
@@ -33,7 +33,7 @@ Possible business interpretation:
 
 Revenue is concentrated in a few categories. `Set` contributes the highest revenue, followed by `Kurta` and `Western Dress`, while the remaining categories contribute much less.
 
-Interview line:
+
 > The business depends heavily on a few key product categories, especially Set, Kurta, and Western Dress.
 
 Business meaning:
@@ -45,7 +45,7 @@ Business meaning:
 
 Revenue is highest in Maharashtra, followed by Karnataka and Uttar Pradesh. This shows that sales are concentrated in a few strong regions, while many states contribute much less.
 
-Interview line:
+
 > Maharashtra leads revenue, followed by Karnataka and Uttar Pradesh, showing that business performance is concentrated in a few core states.
 
 Business meaning:
@@ -56,39 +56,39 @@ Business meaning:
 
 Some rows had missing state values. Those missing values were handled using `Unknown` so that the analysis remained complete without dropping records.
 
-Interview line:
+
 > I replaced missing location values with `Unknown` to keep the dataset complete and avoid losing records during regional analysis.
 
 ## 7) Orders insight
 
 The total number of successfully delivered orders is 28,769. This shows the scale of completed business activity contributing to revenue.
 
-Interview line:
+
 > I counted only delivered orders so the order metric reflects completed transactions contributing to revenue.
 
 ## 8) Profit creation insight
 
 The dataset did not contain profit directly, so profit was derived using a fixed percentage assumption for learning and analysis purposes.
 
-Interview line:
+
 > Since the dataset did not include profit, I derived it using an assumed cost structure so I could still analyze profitability patterns.
 
 Important note:
 - This is a derived metric, not a true accounting profit.
-- It is useful for analysis practice, but the assumption should be stated clearly in interviews.
+
 
 ## 9) Total profit insight
 
 The total profit from delivered orders is approximately 5.6 million. Since profit was derived as 30% of revenue, this metric reflects the assumed profitability of the completed transactions.
 
-Interview line:
+
 > The business generated around 5.6 million in profit from completed transactions, based on the profit assumption used in the project.
 
 ## 10) Monthly profit trend insight
 
 Profit peaked in April 2022 and then declined in May and June. This mirrors the revenue trend and shows that the strongest business performance happened in April.
 
-Interview line:
+
 > Profit peaked in April and then declined afterward, which indicates that the business had its strongest profitability in that month.
 
 Important observation:
@@ -99,7 +99,7 @@ Important observation:
 
 Profit is highly concentrated in a few categories, with `Set` generating the highest profit, followed by `Kurta` and `Western Dress`. Several categories contribute very little profit.
 
-Interview line:
+
 > Profit is concentrated in a few categories, especially Set and Kurta, which are the strongest contributors to profitability.
 
 Business meaning:
@@ -111,7 +111,7 @@ Business meaning:
 
 Profit margin remains constant across categories at 30% because profit was derived using a fixed 30% assumption. This means margin does not provide category-level differentiation in this version of the project.
 
-Interview line:
+
 > Margin is constant across categories because the profit was derived using the same percentage for every row, so it acts more like a validation check than a decision metric here.
 
 Important note:
@@ -122,7 +122,7 @@ Important note:
 
 The weakest categories by profit are `Saree`, `Bottom`, `Blouse`, and `Ethnic Dress`. These categories contribute very little compared to the top performers.
 
-Interview line:
+
 > Saree and Bottom are the weakest categories by profit, making them potential areas for review and improvement.
 
 Business meaning:
@@ -134,7 +134,7 @@ Business meaning:
 
 Profit is highest in Maharashtra, followed by Karnataka and Uttar Pradesh. This shows that the same core states also drive the most profitability.
 
-Interview line:
+
 > Maharashtra contributes the most profit, followed by Karnataka and Uttar Pradesh, which means profitability is concentrated in a few strong regions.
 
 Business meaning:
