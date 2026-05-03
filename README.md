@@ -51,8 +51,9 @@ The final output is a 3-page interactive dashboard designed for business-level d
 * Category-level revenue distribution
 * Revenue vs profit comparison
 
-**Insight:** Revenue peaked in April and declined in the following months
-**Insight:** "Set" category contributes nearly half of total revenue
+**Insights:**
+- Revenue peaked in April and declined in the following months  
+- "Set" category contributes nearly half of total revenue  
 
 ---
 
@@ -62,9 +63,10 @@ The final output is a 3-page interactive dashboard designed for business-level d
 * Revenue vs profit scatter analysis
 * Size-wise revenue distribution
 
-**Insight:** A small number of SKUs drive the majority of revenue
-**Insight:** High revenue does not always translate to high profit
-**Insight:** Mid-range SKUs show growth opportunity
+**Insights:**
+- A small number of SKUs drive the majority of revenue  
+- High revenue does not always translate to high profit  
+- Mid-range SKUs show growth opportunity  
 
 ---
 
@@ -74,9 +76,10 @@ The final output is a 3-page interactive dashboard designed for business-level d
 * State-level performance table (Revenue, Profit, Orders)
 * Top 3 states contribution
 
-**Insight:** Revenue is concentrated in top states, led by Maharashtra
-**Insight:** Top 3 states contribute ~39% of total revenue
-**Insight:** Revenue, profit, and order trends follow a similar pattern across regions
+**Insights:**
+- Revenue is concentrated in top states, led by Maharashtra  
+- Top 3 states contribute ~39% of total revenue  
+- Revenue, profit, and order trends follow a similar pattern across regions  
 
 ---
 
@@ -118,7 +121,7 @@ The final output is a 3-page interactive dashboard designed for business-level d
 ## Additional Documentation
 
 * Data Cleaning & Validation → [View details](data-cleaning.md)
-* SQL Queries → [View queries](sql-queries.sql)
+* SQL Queries → [View queries](sql-queries.md)
 * Detailed Insights → [View insights](insights.md)
 
 ---
