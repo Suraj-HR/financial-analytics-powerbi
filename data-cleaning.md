@@ -1,6 +1,6 @@
 # Finance Performance Dashboard — Data Cleaning and Verification Log
 
-This file documents the exact cleaning and validation steps completed in SQL Server. It is written as an interview reference so you can explain your process clearly.
+This file documents the exact cleaning and validation steps completed in SQL Server.
 
 ## 1) Raw data import
 
@@ -11,7 +11,7 @@ Why this mattered:
 - allowed format inspection first
 - made the cleaning process safer
 
-Interview line:
+
 > I imported the raw file first and inspected the source values before applying any transformation.
 
 ## 2) Date inspection
@@ -24,7 +24,7 @@ Observed formats:
 
 This showed that the date column had mixed formats.
 
-Interview line:
+
 > I first inspected the raw date values and found that the column had mixed formats, so I did not convert it blindly.
 
 ## 3) Date cleaning logic
@@ -52,7 +52,6 @@ What this did:
 - handled `MM-DD-YYYY`
 - stored the result in one consistent `DATE` column
 
-Interview line:
 > I standardized mixed date formats using conditional conversion logic so that all records could be used reliably in monthly trend analysis.
 
 ## 4) Date validation
@@ -93,7 +92,7 @@ Why this mattered:
 - kept the final table clean
 - made the model easier to use later in Power BI
 
-Interview line:
+
 > I created a new date column first to avoid data loss, validated it, and only then replaced the original column.
 
 ## 6) Amount cleaning
@@ -120,7 +119,7 @@ Validation result:
 - many rows could not be converted
 - only a very small number of delivered rows were affected
 
-Interview line:
+
 > I converted the amount column into a numeric field so I could calculate revenue correctly.
 
 ## 7) Amount validation
@@ -148,7 +147,7 @@ How it was handled:
 - the analysis continued because the impact on delivered-order revenue was negligible
 - in a stricter production setting, those few rows should be reviewed manually
 
-Interview line:
+
 > I checked how many amount values failed conversion and then confirmed that the impact on delivered orders was very small.
 
 ## 8) Business filter logic
@@ -164,7 +163,7 @@ Why this mattered:
 - shipped-but-not-delivered orders are not completed business
 - delivered orders give a more accurate business picture
 
-Interview line:
+
 > I filtered only delivered orders so the analysis reflected actual realized revenue instead of incomplete transactions.
 
 ## 9) Missing location values
@@ -180,7 +179,7 @@ Why this mattered:
 - keeps analysis complete
 - makes missing data visible instead of invisible
 
-Interview line:
+
 > I replaced missing location values with `Unknown` so I could keep all records in the regional analysis.
 
 ## 10) Profit creation
@@ -204,7 +203,7 @@ Why this mattered:
 - made it possible to build a finance-focused dashboard
 - useful for learning, but not a substitute for a true accounting cost model
 
-Interview line:
+
 > Since profit data was not available, I derived it using a percentage assumption so I could still analyze profitability patterns.
 
 ## 11) Profit validation
@@ -220,7 +219,7 @@ What this confirmed:
 - profit was exactly 30% of clean amount
 - the calculation was applied consistently
 
-Interview line:
+
 > I validated the derived profit field by checking sample rows to ensure the calculation was consistent.
 
 ## 12) Profit margin note
@@ -248,7 +247,7 @@ Completed checks:
 - profit derivation
 - profit validation
 
-## 14) Final interview summary
+## 14) Final summary
 
 > In SQL Server, I cleaned the dataset by standardizing mixed date formats, converting the amount field into a numeric type, handling missing location values, and deriving a profit column because the dataset did not include one. I also validated the transformed fields before using them in revenue and profitability analysis.
 
