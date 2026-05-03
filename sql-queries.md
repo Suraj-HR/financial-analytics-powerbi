@@ -1,6 +1,6 @@
 # Finance Performance Dashboard — SQL Query Log
 
-This document captures the SQL work completed for the Finance Performance Dashboard. It is written so you can explain each query clearly in interviews and later extend it with additional Day 3+ work if needed.
+
 
 ## Project flow used here
 
@@ -313,7 +313,7 @@ ORDER BY Profit_Category ASC;
 
 ---
 
-## 4) Query design notes you can mention in interviews
+## 4) Query design notes
 
 ### Revenue queries
 - Revenue analysis was always filtered to `Shipped - Delivered to Buyer` so only completed transactions were included.
